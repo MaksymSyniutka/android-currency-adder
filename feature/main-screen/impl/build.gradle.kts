@@ -22,7 +22,7 @@ dependencies {
     implementation(projects.core.utils.android)
     implementation(projects.core.utils.compose)
 
-    implementation(projects.feature.addCurrency.ui) // needed for DI
+    implementation(projects.feature.addCurrency.impl) // needed for DI
 
     implementation(platform(libs.compose.bom))
     implementation(libs.biometric)
