@@ -1,8 +1,7 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id(libs.plugins.common.android.application.module)
     alias(libs.plugins.detekt)
     alias(libs.plugins.hilt)
-    alias(libs.plugins.kotlin)
     alias(libs.plugins.ksp)
     alias(libs.plugins.ktlint)
 }
@@ -21,7 +20,6 @@ android {
 
     buildFeatures {
         buildConfig = true
-        compose = true
     }
 
     buildTypes {
@@ -50,21 +48,25 @@ android {
     }
 }
 
+hilt {
+    enableAggregatingTask = true
+}
+
 dependencies {
-    implementation(project(":core"))
-    implementation(project(":base-feature"))
+    implementation(projects.core.database.impl) // needed for DI
+    implementation(projects.core.navigation.android) // needed for DI
+    implementation(projects.core.network.impl) // needed for DI
+    implementation(projects.core.utils.kotlin.impl) // needed for DI
+
+    implementation(projects.feature.exchangeRates.impl) // needed for DI
+    implementation(projects.feature.mainScreen.impl) // needed for DI
+    implementation(projects.feature.totalSavings.impl) // needed for DI
+    implementation(projects.feature.totalSavings.ui) // needed for DI
+    implementation(projects.feature.userSavings.impl) // needed for DI
+    implementation(projects.feature.userSavings.ui) // needed for DI
 
     implementation(libs.hilt)
-    implementation(libs.navigation) // needed for Room
-    implementation(libs.room.ktx)
     implementation(libs.timber)
 
     ksp(libs.hilt.compiler)
-    ksp(libs.room.compiler)
-
-    detektPlugins(libs.detekt.compose.rules)
-}
-
-ksp {
-    arg("room.schemaLocation", "$projectDir/schemas")
 }
