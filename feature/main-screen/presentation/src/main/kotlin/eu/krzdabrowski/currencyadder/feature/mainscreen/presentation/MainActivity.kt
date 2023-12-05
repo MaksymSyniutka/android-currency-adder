@@ -5,8 +5,8 @@ import androidx.activity.compose.setContent
 import androidx.fragment.app.FragmentActivity
 import dagger.hilt.android.AndroidEntryPoint
 import eu.krzdabrowski.currencyadder.core.compose.theme.CurrencyAdderTheme
-import eu.krzdabrowski.currencyadder.core.navigation.android.NavigationFactory
-import eu.krzdabrowski.currencyadder.core.navigation.android.NavigationManager
+import eu.krzdabrowski.currencyadder.core.navigation.NavigationFactory
+import eu.krzdabrowski.currencyadder.core.navigation.NavigationManager
 import javax.inject.Inject
 
 @AndroidEntryPoint

@@ -17,7 +17,7 @@ android {
 }
 
 dependencies {
-    implementation(projects.core.navigation.android)
+    implementation(projects.core.navigation)
     implementation(projects.core.compose.theme)
     implementation(projects.core.utils.android)
     implementation(projects.core.utils.compose)

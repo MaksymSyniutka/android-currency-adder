@@ -18,10 +18,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.navigation.compose.rememberNavController
-import eu.krzdabrowski.currencyadder.core.navigation.android.NavigationDestination
-import eu.krzdabrowski.currencyadder.core.navigation.android.NavigationFactory
-import eu.krzdabrowski.currencyadder.core.navigation.android.NavigationHost
-import eu.krzdabrowski.currencyadder.core.navigation.android.NavigationManager
+import eu.krzdabrowski.currencyadder.core.navigation.NavigationDestination
+import eu.krzdabrowski.currencyadder.core.navigation.NavigationFactory
+import eu.krzdabrowski.currencyadder.core.navigation.NavigationHost
+import eu.krzdabrowski.currencyadder.core.navigation.NavigationManager
 import eu.krzdabrowski.currencyadder.core.utils.compose.collectWithLifecycle
 import eu.krzdabrowski.currencyadder.feature.mainscreen.presentation.auth.BiometricPrompt
 

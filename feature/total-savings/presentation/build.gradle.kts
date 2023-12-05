@@ -34,16 +34,10 @@ dependencies {
     implementation(libs.lifecycle.runtime.compose)
     implementation(libs.timber)
     testImplementation(libs.bundles.common.test)
-    androidTestImplementation(libs.bundles.common.android.test)
-    androidTestImplementation(libs.datastore) // needed for Hilt tests
     debugImplementation(libs.debug.compose.manifest)
 
     ksp(libs.hilt.compiler)
     kspAndroidTest(libs.test.android.hilt.compiler)
 
     detektPlugins(libs.detekt.compose.rules)
-
-    androidTestImplementation(testFixtures(projects.feature.exchangeRates.domain))
-    androidTestImplementation(testFixtures(projects.feature.totalSavings.domain))
-    androidTestImplementation(projects.core.utils.test.android)
 }

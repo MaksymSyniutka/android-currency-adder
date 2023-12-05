@@ -6,7 +6,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import dagger.multibindings.IntoSet
 import eu.krzdabrowski.currencyadder.addcurrency.presentation.CurrencyAdderNavigationFactory
-import eu.krzdabrowski.currencyadder.core.navigation.android.NavigationFactory
+import eu.krzdabrowski.currencyadder.core.navigation.NavigationFactory
 import javax.inject.Singleton
 
 @Module

@@ -54,7 +54,7 @@ hilt {
 
 dependencies {
     implementation(projects.core.database.android) // needed for DI
-    implementation(projects.core.navigation.android) // needed for DI
+    implementation(projects.core.navigation) // needed for DI
     implementation(projects.core.network.data) // needed for DI
     implementation(projects.core.utils.kotlin.impl) // needed for DI
 
