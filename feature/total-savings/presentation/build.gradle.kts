@@ -19,7 +19,7 @@ android {
     }
 }
 dependencies {
-    implementation(projects.core.architecture.android)
+    implementation(projects.core.base.android)
     implementation(projects.core.database.kotlin)
     implementation(projects.core.utils.android)
 

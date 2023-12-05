@@ -18,7 +18,7 @@ import eu.krzdabrowski.currencyadder.usersavings.presentation.UserSavingsUiState
 import eu.krzdabrowski.currencyadder.usersavings.presentation.UserSavingsUiState.PartialState.UserSavingsPartialState.Error
 import eu.krzdabrowski.currencyadder.usersavings.presentation.UserSavingsUiState.PartialState.UserSavingsPartialState.Loading
 import eu.krzdabrowski.currencyadder.usersavings.presentation.UserSavingsUiState.PartialState.UserSavingsPartialState.UserSavingsWithCurrencyCodesFetched
-import eu.krzdabrowski.currencyadder.core.architecture.android.viewmodel.BaseViewModel
+import eu.krzdabrowski.currencyadder.core.base.android.viewmodel.BaseViewModel
 import eu.krzdabrowski.currencyadder.exchangerates.domain.usecase.GetAllCurrencyCodesUseCase
 import eu.krzdabrowski.currencyadder.exchangerates.domain.usecase.GetCurrencyCodesThatStartWithUseCase
 import eu.krzdabrowski.currencyadder.exchangerates.domain.usecase.RefreshExchangeRatesUseCase

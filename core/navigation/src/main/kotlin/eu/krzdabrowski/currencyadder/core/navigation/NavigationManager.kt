@@ -1,6 +1,6 @@
 package eu.krzdabrowski.currencyadder.core.navigation
 
-import eu.krzdabrowski.currencyadder.core.common.entities.di.MainImmediateScope
+import com.exampleeu.krzdabrowski.currencyadder.core.base.kotlin.MainImmediateScope
 import eu.krzdabrowski.currencyadder.core.navigation.NavigationDestination.Back
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.channels.Channel

@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":core:base:kotlin")
+
+
 includeBuild("buildSrcIncluded")
 
 include(":app")

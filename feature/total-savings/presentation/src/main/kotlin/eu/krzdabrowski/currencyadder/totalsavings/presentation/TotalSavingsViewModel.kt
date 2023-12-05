@@ -2,7 +2,7 @@ package eu.krzdabrowski.currencyadder.totalsavings.presentation
 
 import androidx.lifecycle.SavedStateHandle
 import dagger.hilt.android.lifecycle.HiltViewModel
-import eu.krzdabrowski.currencyadder.core.architecture.android.viewmodel.BaseViewModel
+import eu.krzdabrowski.currencyadder.core.base.android.viewmodel.BaseViewModel
 import eu.krzdabrowski.currencyadder.core.utils.toFormattedAmount
 import eu.krzdabrowski.currencyadder.exchangerates.domain.usecase.GetAllCurrencyCodesUseCase
 import eu.krzdabrowski.currencyadder.totalsavings.domain.usecase.GetChosenCurrencyCodeForTotalSavingsUseCase

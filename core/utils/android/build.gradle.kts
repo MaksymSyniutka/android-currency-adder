@@ -10,11 +10,13 @@ android {
 }
 
 dependencies {
+    implementation(projects.core.base.kotlin)
+
     implementation(platform(libs.compose.bom))
     implementation(libs.hilt)
     implementation(libs.kotlin.coroutines)
     implementation(libs.kotlin.datetime)
-    androidTestImplementation(libs.bundles.common.android.test)
+    implementation(libs.timber)
 
     ksp(libs.hilt.compiler)
 }

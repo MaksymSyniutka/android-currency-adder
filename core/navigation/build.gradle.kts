@@ -18,7 +18,7 @@ android {
 }
 
 dependencies {
-    implementation(projects.core.common.entities)
+    implementation(projects.core.base.kotlin)
 
     implementation(platform(libs.compose.bom))
     implementation(libs.navigation)

@@ -53,17 +53,17 @@ hilt {
 }
 
 dependencies {
-    implementation(projects.core.database.android) // needed for DI
-    implementation(projects.core.navigation) // needed for DI
-    implementation(projects.core.network.data) // needed for DI
-    implementation(projects.core.utils.kotlin.impl) // needed for DI
+    implementation(projects.core.database.android) { because("needed for DI") }
+    implementation(projects.core.navigation) { because("needed for DI") }
+    implementation(projects.core.network.data) { because("needed for DI") }
+    implementation(projects.core.utils.android) { because("needed for DI") }
 
-    implementation(projects.feature.exchangeRates.data) // needed for DI
-    implementation(projects.feature.mainScreen.presentation) // needed for DI
-    implementation(projects.feature.totalSavings.data) // needed for DI
-    implementation(projects.feature.totalSavings.presentation) // needed for DI
-    implementation(projects.feature.userSavings.data) // needed for DI
-    implementation(projects.feature.userSavings.presentation) // needed for DI
+    implementation(projects.feature.exchangeRates.data) { because("needed for DI") }
+    implementation(projects.feature.mainScreen.presentation) { because("needed for DI") }
+    implementation(projects.feature.totalSavings.data) { because("needed for DI") }
+    implementation(projects.feature.totalSavings.presentation) { because("needed for DI") }
+    implementation(projects.feature.userSavings.data) { because("needed for DI") }
+    implementation(projects.feature.userSavings.presentation) { because("needed for DI") }
 
     implementation(libs.hilt)
     implementation(libs.timber)
