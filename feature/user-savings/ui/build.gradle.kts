@@ -32,7 +32,7 @@ dependencies {
     implementation(projects.feature.totalSavings.api)
     implementation(projects.feature.userSavings.api)
 
-    androidTestImplementation(testFixtures(projects.feature.exchangeRates.api))
+    androidTestImplementation(testFixtures(projects.feature.userSavings.ui))
     androidTestImplementation(projects.core.utils.test.android)
 
     testFixturesImplementation(testFixtures(projects.feature.exchangeRates.api))

@@ -9,7 +9,7 @@ android {
 }
 
 dependencies {
-    implementation(projects.core.common.entities.di)
+    implementation(projects.core.common.entities)
 
     implementation(libs.kotlin.coroutines)
     implementation(libs.timber)
