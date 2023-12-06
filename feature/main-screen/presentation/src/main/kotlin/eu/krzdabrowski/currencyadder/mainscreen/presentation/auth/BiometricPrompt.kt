@@ -1,4 +1,4 @@
-package eu.krzdabrowski.currencyadder.feature.mainscreen.presentation.auth
+package eu.krzdabrowski.currencyadder.mainscreen.presentation.auth
 
 import android.os.Build
 import androidx.biometric.BiometricManager

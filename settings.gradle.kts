@@ -1,8 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":core:base:kotlin")
-
-
 includeBuild("buildSrcIncluded")
 
 include(":app")
@@ -10,8 +7,9 @@ include(":app")
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 // region submodules
-includeRecursive(dir = file("feature"), dirModuleName = ":feature")
 includeRecursive(dir = file("core"), dirModuleName = ":core")
+includeRecursive(dir = file("feature"), dirModuleName = ":feature")
+includeRecursive(dir = file("reusable"), dirModuleName = ":reusable")
 
 fun includeRecursive(dir: File, dirModuleName: String) {
     if (dir.isModule()) {

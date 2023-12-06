@@ -1,13 +1,11 @@
 plugins {
     id(libs.plugins.common.android.library.module)
-    alias(libs.plugins.detekt)
-    alias(libs.plugins.junit)
-    alias(libs.plugins.kotlin.parcelize)
+    alias(libs.plugins.hilt)
     alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "eu.krzdabrowski.currencyadder.usersavings.presentation"
+    namespace = "eu.krzdabrowski.currencyadder.addcurrency.presentation"
 
     buildFeatures {
         compose = true
@@ -17,28 +15,24 @@ android {
         kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
     }
 }
+
 dependencies {
     implementation(projects.core.base.android)
-    implementation(projects.core.database.kotlin)
     implementation(projects.core.navigation)
     implementation(projects.core.utils.android)
-    implementation(projects.core.utils.compose)
 
-    implementation(projects.feature.exchangeRates.domain)
-    implementation(projects.feature.totalSavings.domain)
-    implementation(projects.feature.userSavings.domain)
+    implementation(projects.reusable.totalSavings.presentation)
+    implementation(projects.reusable.userSavings.presentation)
 
-    implementation(libs.accompanist.swipe.refresh)
     implementation(platform(libs.compose.bom))
     implementation(libs.compose.material3)
     implementation(libs.hilt)
     implementation(libs.kotlin.coroutines)
-    implementation(libs.kotlin.datetime)
     implementation(libs.lifecycle.runtime.compose)
     implementation(libs.timber)
+    implementation(libs.navigation)
+    implementation(libs.navigation.hilt)
     testImplementation(libs.bundles.common.test)
-    androidTestImplementation(libs.bundles.common.android.test)
-    androidTestImplementation(libs.datastore) // needed for Hilt tests
     debugImplementation(libs.debug.compose.manifest)
 
     ksp(libs.hilt.compiler)

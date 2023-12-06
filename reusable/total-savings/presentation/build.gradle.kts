@@ -1,11 +1,14 @@
 plugins {
     id(libs.plugins.common.android.library.module)
-    alias(libs.plugins.hilt)
+    alias(libs.plugins.detekt)
+    alias(libs.plugins.junit)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "eu.krzdabrowski.currencyadder.addcurrency.presentation"
+    namespace = "eu.krzdabrowski.currencyadder.totalsavings.presentation"
 
     buildFeatures {
         compose = true
@@ -15,14 +18,14 @@ android {
         kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
     }
 }
-
 dependencies {
     implementation(projects.core.base.android)
-    implementation(projects.core.navigation)
+    implementation(projects.core.database.kotlin)
     implementation(projects.core.utils.android)
 
-    implementation(projects.feature.totalSavings.presentation)
-    implementation(projects.feature.userSavings.presentation)
+    implementation(projects.reusable.exchangeRates.domain)
+    implementation(projects.reusable.totalSavings.domain)
+    implementation(projects.reusable.userSavings.domain)
 
     implementation(platform(libs.compose.bom))
     implementation(libs.compose.material3)
@@ -30,8 +33,6 @@ dependencies {
     implementation(libs.kotlin.coroutines)
     implementation(libs.lifecycle.runtime.compose)
     implementation(libs.timber)
-    implementation(libs.navigation)
-    implementation(libs.navigation.hilt)
     testImplementation(libs.bundles.common.test)
     debugImplementation(libs.debug.compose.manifest)
 

@@ -10,7 +10,7 @@ android {
 }
 
 dependencies {
-    implementation(projects.feature.userSavings.domain)
+    implementation(projects.reusable.userSavings.domain)
     implementation(projects.core.database.kotlin)
     implementation(projects.core.utils.android)
 

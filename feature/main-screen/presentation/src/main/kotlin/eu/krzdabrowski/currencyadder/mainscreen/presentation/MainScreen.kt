@@ -1,4 +1,4 @@
-package eu.krzdabrowski.currencyadder.feature.mainscreen.presentation
+package eu.krzdabrowski.currencyadder.mainscreen.presentation
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -23,7 +23,7 @@ import eu.krzdabrowski.currencyadder.core.navigation.NavigationFactory
 import eu.krzdabrowski.currencyadder.core.navigation.NavigationHost
 import eu.krzdabrowski.currencyadder.core.navigation.NavigationManager
 import eu.krzdabrowski.currencyadder.core.utils.compose.collectWithLifecycle
-import eu.krzdabrowski.currencyadder.feature.mainscreen.presentation.auth.BiometricPrompt
+import eu.krzdabrowski.currencyadder.mainscreen.presentation.auth.BiometricPrompt
 
 @Composable
 internal fun MainScreen(

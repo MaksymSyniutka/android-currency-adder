@@ -11,9 +11,9 @@ android {
 }
 
 dependencies {
-    implementation(projects.feature.exchangeRates.domain)
     implementation(projects.core.database.kotlin)
     implementation(projects.core.utils.android)
+    implementation(projects.reusable.exchangeRates.domain)
 
     implementation(libs.hilt)
     ksp(libs.hilt.compiler)

@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "eu.krzdabrowski.currencyadder.feature.mainscreen.presentation"
+    namespace = "eu.krzdabrowski.currencyadder.mainscreen.presentation"
 
     buildFeatures {
         compose = true
@@ -22,7 +22,7 @@ dependencies {
     implementation(projects.core.utils.android)
     implementation(projects.core.utils.compose)
 
-    implementation(projects.feature.addCurrency.presentation) // needed for DI
+    implementation(projects.reusable.addCurrency.presentation) { because("needed for DI") }
 
     implementation(platform(libs.compose.bom))
     implementation(libs.biometric)

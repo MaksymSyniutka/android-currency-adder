@@ -10,9 +10,9 @@ android {
 }
 
 dependencies {
-    implementation(projects.feature.totalSavings.domain)
     implementation(projects.core.database.kotlin)
     implementation(projects.core.utils.android)
+    implementation(projects.reusable.totalSavings.domain)
 
     implementation(libs.hilt)
     ksp(libs.hilt.compiler)

@@ -61,9 +61,9 @@ dependencies {
     implementation(projects.feature.exchangeRates.data) { because("needed for DI") }
     implementation(projects.feature.mainScreen.presentation) { because("needed for DI") }
     implementation(projects.feature.totalSavings.data) { because("needed for DI") }
-    implementation(projects.feature.totalSavings.presentation) { because("needed for DI") }
+    implementation(projects.reusable.totalSavings.presentation) { because("needed for DI") }
     implementation(projects.feature.userSavings.data) { because("needed for DI") }
-    implementation(projects.feature.userSavings.presentation) { because("needed for DI") }
+    implementation(projects.reusable.userSavings.presentation) { because("needed for DI") }
 
     implementation(libs.hilt)
     implementation(libs.timber)
